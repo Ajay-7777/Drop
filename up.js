@@ -29,7 +29,7 @@ export const uploadObject=async (name,data,token)=>{
         console.log(
             "Successfully uploaded " +
             params.Key +
-            " and uploaded it to " +
+            " and uploaded it to " +   
             params.Bucket +
             "/" +
             params.Key
