@@ -5,15 +5,25 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="99374051558-r1kkeqccgt3d59fk7qofe23kf8cn58oa.apps.googleusercontent.com">
         <meta name="viewport" content="width=device-width",initial-scale=1.0" >
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       
         <title>Login</title>
     </head>
 <body >
-  <div style="display: flex; justify-content: center; align-items: center; margin-top: 25%;">
-<h1 style="margin-right:5px ;"> Dropdrive </h1>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Dropdrive</a>
+      </div>
+    </div>
+  </nav>
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 15%;">
 
-<!-- <a href="#" onclick="signOut();">Sign out</a> -->
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<!--  
+<a href="#" onclick="signOut();">Sign out</a> -->
 </div>
 <script>
 //  function onSignIn(googleUser) {
@@ -43,8 +53,8 @@ xhr.onload = function() {
   }
 };
 xhr.send(JSON.stringify({token: id_token}));
-  
 }
+
 </script>
 </body>
 </html>
